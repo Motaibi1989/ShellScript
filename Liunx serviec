@@ -1,0 +1,4 @@
+service --status-all
+ps -ef
+
+
