@@ -1,0 +1,42 @@
+sudo apt install lazarus
+
+sudo apt update && sudo apt upgrade
+
+sudo sh -c "apt autoremove fpc lazarus lazarus-ide \
+lazarus-ide-2.0 lazarus-project fpc-source && \
+rm -Rf /usr/lib/fpc && \
+rm -Rf /usr/lib/lazarus && \
+rm -Rf /usr/share/fpcsrc && \
+rm -Rf /etc/lazarus && \
+rm -rf /etc/fpc.* && \
+rm -rf /etc/fpc-* && \
+rm -rf /etc/fppkg* && \
+rm -f ~/.fpc && \
+rm -Rf ~/.lazarus"
+
+sudo apt install binutils libgtk2.0-dev
+
+sudo apt install ./fpc*.deb ./lazarus-project*.deb
+
+sudo dpkg --install ./fpc*.deb ./lazarus-project*.deb
+
+
+Download the deb files for Lazarus from https://lazarus-ide.org
+https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%202.2.2/
+
+
+
+Then create a desktop file, eg ~/.local/share/applications/lazarus.desktop that looks a bit like this 
+
+[Desktop Entry]
+Name=Lazarus Fix
+GenericName=ide
+Comment=ide
+Exec=/home/myusername/bin/Lazarus/fixes_2_0/lazarus --pcp=/home/myusername/.fixes_2_0
+Icon=/home/myusername/.icons/lazarus256x256.png
+Terminal=false
+Type=Application
+Categories=Utility;Development;
+
+
+
