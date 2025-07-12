@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Ultimate Ubuntu Setup Script - English Version - for Mohammed Alotaibi
-# Motaibi1989
+# --------------------------------------------
+# Ubuntu installer 1.0
+# Author: Mohammed Alotaibi (motaibi1989.com)
+# Last Update: 2025-07-12
+# --------------------------------------------
 
 
 set -eo pipefail
