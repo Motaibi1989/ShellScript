@@ -6,6 +6,8 @@
 # Last Update: 2025-07-13
 # --------------------------------------------
 
+#sudo apt-get install gnome-tweak-tool
+#sudo apt install gnome-tweaks
 
 # 1. Basic Wallpaper Settings
 # ---------------------------
